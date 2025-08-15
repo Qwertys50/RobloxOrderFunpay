@@ -21,9 +21,7 @@ local function onCharacterAdded(character)
 
 	humanoid.Died:Connect(function()
 		local choice = math.random(1, 2)
-		
-		print(choice)
-		
+				
 		if choice == 1 then
 			local randomGamePassId = getRandomKey(game_pass_id)
 			if randomGamePassId then
